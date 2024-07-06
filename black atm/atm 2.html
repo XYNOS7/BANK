@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ATM Machine</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="atm 2.css">
+</head>
+<body>
+  <div class="atm-machine">
+    <div class="screen initial-screen">
+      <h1>FUTURE-BANK</h1>
+      <button class="enter-button" value="enter">Enter</button>
+    </div>
+    <div class="screen" style="display: none;">
+        <h1>ATM Machine</h1>
+    </div>
+    <div class="login-create-account" style="display: none;">
+      <button class="login-button" value="login">Login</button>
+      <button class="create-account-button" value="create-account">Create Account</button>
+    </div>
+
+    <!-- login form -->
+    <div class="login-form" style="display: none;">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username"><br><br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password"><br><br>
+      <button class="login-submit" value="login-submit">Login</button>
+    </div>
+
+    <!-- create account form -->
+    <div class="create-account-form" style="display: none;">
+      <label for="new-username">Username:</label>
+      <input type="text" id="new-username" name="new-username"><br><br>
+      <label for="new-password">Password:</label>
+      <input type="password" id="new-password" name="new-password"><br><br>
+      <button class="create-account-submit" value="create-account-submit">Create Account</button>
+    </div>
+
+    <!-- ATM interface -->
+    <div class="atm-interface" style="display: none;">
+      <div class="atm-screen">
+        <div class="balance-display-container">
+          <p id="balance-display">Balance: $0.00</p>
+        </div>
+        <div class="message-display-container">
+          <p id="message-display"></p>
+        </div>
+        <div class="user-display">
+          <p id="user-display-text"></p>
+        </div>        
+      </div>
+      <div class="atm-buttons">
+        <button class="option-button" value="withdraw">Cash Withdrawal</button>
+        <button class="option-button" value="deposit">Deposit</button>
+        <button class="option-button" value="balance">Balance Enquiry</button>
+        <button class="option-button" class="back-button" value="back">Back</button>
+      </div>
+      <div class="number-plate">
+        <div class="keypad">
+          <button class="num-button" value="1">1</button>
+          <button class="num-button" value="2">2</button>
+          <button class="num-button" value="3">3</button>
+          <button class="num-button" value="4">4</button>
+          <button class="num-button" value="5">5</button>
+          <button class="num-button" value="6">6</button>
+          <button class="num-button" value="7">7</button>
+          <button class="num-button" value="8">8</button>
+          <button class="num-button" value="9">9</button>
+          <button class="num-button" value="0">0</button>
+          <button class="func-button" value="enter">Enter</button>
+          <button class="func-button" value="clear">Clear</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="atm 2.js"></script>
+</body>
+</html>
